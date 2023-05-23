@@ -9,9 +9,8 @@ export default async function Home() {
   console.log(res);
 
   return (
-    <div className="text-lg">
-      Hello bhuws
-      <div>
+    <main>
+      <div className="grid gap-16 grid-cols-fluid">
         {res.results.map((movie) => (
           <Movie
             key={movie.id}
@@ -22,6 +21,6 @@ export default async function Home() {
           />
         ))}
       </div>
-    </div>
+      </main>
   );
 }
